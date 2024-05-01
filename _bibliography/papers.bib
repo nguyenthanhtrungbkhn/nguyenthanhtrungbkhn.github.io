@@ -3,6 +3,139 @@
 
 @string{aps = {American Physical Society,}}
 
+@INPROCEEDINGS{10060683,
+  author={Nguyen, Thanh Trung and Vu, Minh Hai and Nguyen, Phi Le and Do, Phan Thuan and Nguyen, Kien},
+  booktitle={2023 IEEE 20th Consumer Communications & Networking Conference (CCNC)}, 
+  title={A Q-learning-based Multipath Scheduler for Data Transmission Optimization in Heterogeneous Wireless Networks}, 
+  year={2023},
+  volume={},
+  number={},
+  pages={573-578},
+  abstract={In the era of 5G and beyond, mobile devices usually can access several heterogeneous wireless networks (e.g., Wi-Fi and 5G). To simultaneously and efficiently utilize the accessible network resources, muli path transport protocols, such as MPTCP and MPQUIC, have shown much potential. In these protocols, scheduling is one of the critical processes to ensure the performance of the multipath transmission. Although there have been many proposed multipath schedulers in the literature, they have not performed well in heterogeneous networks, especially when the network conditions vary (i.e., dynamicity). In this paper, we propose a novel Q-learning-based Multipath scheduler for data transmission optimization (Q-SAT), aiming to bypass the existing limitation. By leveraging the self-learning ability of reinforcement learning, Q-SAT can instantly observe environmental changes and deploy appropriate path selection to optimize data transmission time. As a result, Q-SAT efficiently schedules multipath communication in heterogeneous wireless networks with different dynamicity levels. We have implemented Q-SAT with MPQUIC and extensively evaluated Q-SAT in an emulated environment and a real network. The evaluation results show that Q-SAT improves the data transmission time by at least 10% in the emulation and 26% in the actual deployment compared to the state-of-the-art schedulers.},
+  keywords={Transport protocols;Schedules;5G mobile communication;Wireless networks;TCPIP;Mobile handsets;Heterogeneous networks;Q-learning;MPQUIC;multipath scheduler;heterogeneous networks;dynamicity},
+  doi={10.1109/CCNC51644.2023.10060683},
+  ISSN={2331-9860},
+  month={Jan},
+  abbr={Network}
+  }
+
+@INPROCEEDINGS{10454897,
+  author={Nguyen, Thanh Trung and Vu, Minh Hai and Ly Dinh, Thi Ha and Nguyen, Phi Le and Nguyen, Kien},
+  booktitle={2024 IEEE 21st Consumer Communications & Networking Conference (CCNC)}, 
+  title={MuLeS: A Multi-Client Learning-Based MPQUIC Scheduler}, 
+  year={2024},
+  volume={},
+  number={},
+  pages={656-661},
+  abstract={Multipath QUIC (MPQUIC) is an emerging multi-path transport protocol that lets a mobile client simultaneously use several wireless networks (e.g., Wi-Fi and cellular) in 5G and beyond. MPQUIC's performance heavily relies on its scheduler, which determines a path or several ones for sending packets in the upcoming time slot. Despite numerous efforts, the traditional design of MPQUIC schedulers can not handle wireless networks' dynamicity. Recently, a learning-based approach has shown the potential to bypass such limitations of the MPQUIC scheduler with various learning-based schedulers proposed in the literature. However, the existing works only consider the scheduling task in a single client context. When applying such a scheduler to multiple client scenarios (likely to occur in practice), they suffer from a so-called rush scheduling phenomenon. More specifically, the packet forwarding decisions made by a scheduler are only accountable to one client, resulting in conflicts of interest with other clients' schedulers. Consequently, it may harm the network performance. This paper addresses the issue and designs a learning-based MPQUIC scheduler considering the existence of multiple clients. To the best of our knowledge, this is the first work to do so. We propose MuLeS, a learning-based scheduler for MPQUIC in the multi-client scenario. MuLeS uses a central controller, which allows it to observe the state of all flows in the network. Our evaluation results show that MuLeS outperforms contemporary schedulers in terms of various metrics, including download time and loss rate. Notably, MuLeS reduces the average download time by 7%-16% compared to the other schedulers.},
+  keywords={Transport protocols;Measurement;Q-learning;5G mobile communication;Wireless networks;Scheduling;Task analysis;MPQUIC;scheduler;multi-client learning;wireless networks},
+  doi={10.1109/CCNC51664.2024.10454897},
+  ISSN={2331-9860},
+  month={Jan},
+  abbr={Network}
+}
+
+@inproceedings{10.1145/3568562.3568654,
+  author = {Vu, Minh Hai and T. T. Nguyen, Giang and Tran, Hai Dang and Nguyen, Thanh Trung and Do, Phan Thuan and Nguyen, Phi Le and Nguyen, Kien},
+  title = {An Empirical Study of MPQUIC Schedulers in Mobile Wireless Networks},
+  year = {2022},
+  isbn = {9781450397254},
+  publisher = {Association for Computing Machinery},
+  address = {New York, NY, USA},
+  url = {https://doi.org/10.1145/3568562.3568654},
+  doi = {10.1145/3568562.3568654},
+  abstract = {Multipath QUIC (MPQUIC), an emerging multipath transport protocol (MTP) that inherits the advantages of the canonical multipath TCP (MPTCP) and the widespread QUIC, potentially plays a vital role in 5G and beyond. MPQUIC can exploit multiple networks (e.g., Wi-Fi, LTE, 5G) on a mobile device to boost the quality of services while efficiently utilizing network resources. In MPQUIC, the scheduler, which is in charge of concurrently scheduling data transmission in several paths, largely impacts the protocols’ performance, especially in dynamic environments. In fact, in the literature, a considerable number of MTP schedulers for MPQUIC have been proposed. Unfortunately, their performances have been primarily evaluated in static networks without (or simply) considering mobile ones. Hence, this work attempts to investigate the performance of MPQUIC schedulers in the mobile context, aiming to fill the literature gap. Specifically, we implement and assess the performance of five MPQUIC schedulers in various mobility patterns using the Mininet-WiFi emulator. More importantly, we introduce q-ReLeS, an extension of an MPTCP scheduler called ReLeS for MPQUIC. The experimental results show that q-ReLeS reduces the download time from to compared to the others. Besides, the empirical investigation demonstrates that mobility and velocity patterns substantially impact the performance of MPQUIC schedulers.},
+  booktitle = {Proceedings of the 11th International Symposium on Information and Communication Technology},
+  pages = {193–200},
+  numpages = {8},
+  keywords = {MPQUIC, mobile wireless network, mobility model, multipath scheduler},
+  location = {Hanoi, Vietnam},
+  series = {SoICT '22},
+  abbr={Network}
+}
+
+@INPROCEEDINGS{10152217,
+  author={Nguyen, Thanh Trung and Vu, Minh Hai and Le Nguyen, Phi and Do, Phan Thuan and Nguyen, Kien},
+  booktitle={2022 IEEE 8th World Forum on Internet of Things (WF-IoT)}, 
+  title={A Reinforcement Learning-based Multipath Scheduling for Heterogeneous Wireless Networks}, 
+  year={2022},
+  volume={},
+  number={},
+  pages={1-2},
+  abstract={With the development and commercialization of new mobile network generations such as 5G and beyond, future communications are shifting from the traditional single-path paradigm to multipath transport protocols such as MPTCP and MPQUIC. One of the most critical issues in dealing with the multipath transmission is appropriately scheduling the pathways in order to guarantee QoS. Despite the fact that tremendous effort has been put into developing multipath scheduling algorithms, existing approaches suffer from several limitations when dealing with the network's dynamicity, including congestion and packet loss. In this paper, we propose a novel Reinforcement learning-based multipath transport protocol named SATO, which efficiently schedules multipath communication in heterogeneous wireless networks. By leveraging the self-learning ability of reinforcement learning, a node equipped with SATO can capture the environmental changes and select transmission paths based on an appropriate policy to optimize QoS. Our evaluation results show that SATO improves the QoS by 10%-15% in simulation and 12% in a real deployment compared to the state-of-the-art algorithm.},
+  keywords={Transport protocols;Schedules;Q-learning;Scheduling algorithms;Wireless networks;Packet loss;Quality of service;Q-learning;MPQUIC;Multipath Scheduling},
+  doi={10.1109/WF-IoT54382.2022.10152217},
+  ISSN={},
+  month={Oct},
+  award={I received **Best Student Paper Award**},
+  award_name={Best paper},
+  abbr={Network}
+  }
+
+@INPROCEEDINGS{9978107,
+  author={Nguyen, Hung Cuong and Dao, Manh Cuong and Nguyen, Thanh Trung and Doan, Ngoc Khanh and Nguyen, Thanh Hung and Nguyen, Truong Thao and Le Nguyen, Phi},
+  booktitle={2022 IEEE 33rd Annual International Symposium on Personal, Indoor and Mobile Radio Communications (PIMRC)}, 
+  title={Deep Reinforcement Learning-based Charging Algorithm for Target Coverage and Connectivity in WRSNs}, 
+  year={2022},
+  volume={},
+  number={},
+  pages={1178-1184},
+  abstract={Target coverage and connectivity are two of the most crucial issues in handling wireless sensor networks. However, maintaining these two factors is challenging due to the energy constraint of sensors. To this end, wireless charging has emerged as a promising solution to prolong the sensor's lifetime. In a wireless charging sensor network, a mobile charger moves around the network, stops at several charging locations and charges the sensor via electromagnetic waves. In this study, we investigate the problem of optimizing the charging location and charging time of the mobile charger to ensure the target coverage and connectivity of the network. Our main idea is to leverage the Deep Reinforcement Learning approach. Specifically, the mobile charger will act as an agent, which receives a state including the energy information of the sensors. The mobile charger then decides the following charging location and charging time using the state information and the knowledge learned in the past. Experimental results have shown that our algorithm can extend the network lifetime (i.e., the time until the network coverage and connectivity are not guaranteed) up to 245.9 times compared to the existing algorithms.},
+  keywords={Training;Wireless communication;Deep learning;Wireless sensor networks;Inductive charging;Electromagnetic scattering;Reinforcement learning;Wireless rechargeable sensor networks;target coverage;connectivity;Deep reinforcement learning},
+  doi={10.1109/PIMRC54779.2022.9978107},
+  ISSN={2166-9589},
+  month={Sep.},
+  abbr={Network}
+}
+
+@INPROCEEDINGS{9026510,
+  author={Trung, Nguyen Thanh and Hung, Nguyen Thanh and Le Nguyen, Phi},
+  booktitle={2019 25th Asia-Pacific Conference on Communications (APCC)}, 
+  title={Network Lifetime Maximization for Full Area Coverage in Wireless Sensor Networks}, 
+  year={2019},
+  volume={},
+  number={},
+  pages={431-436},
+  abstract={Sensor scheduling for maximizing the network lifetime and achieving the full area coverage is a paramount problem in wireless sensor networks. Although considerable effort has been devoted, this problem is still a challenge to the research community. The approximation algorithms proposed so far couldn't guarantee the performance ratio. In this paper, we first formulate the problem under linear programming model which can help to determine the exact optimal solution. Then, in order to reduce the time complexity, we propose a (1 +∊)-approximation algorithm based on divide-and-conquer technique. The main idea is to divide the network into sub-regions, then determine the suboptimal solution for every sub-region and combine them to obtain the total solution of the whole network. Moreover, with the aim of speeding up the suboptimal solution finding process, we propose an approximation algorithm using the column generation approach. The experiment results show the superiority of our proposed algorithms over the existing ones.},
+  keywords={Partitioning algorithms;Wireless sensor networks;Approximation algorithms;Bars;Silicon;Schedules;Time complexity},
+  doi={10.1109/APCC47188.2019.9026510},
+  ISSN={2163-0771},
+  month={Nov},
+  abbr={Network}
+}
+
+@INPROCEEDINGS{8171330,
+  author={Nguyen, Phi-Le and Ji, Yusheng and Trung, Nguyen Thanh and Hung, Nguyen Thanh},
+  booktitle={2017 IEEE 16th International Symposium on Network Computing and Applications (NCA)}, 
+  title={Constant stretch and load balanced routing protocol for bypassing multiple holes in wireless sensor networks}, 
+  year={2017},
+  volume={},
+  number={},
+  pages={1-9},
+  abstract={The occurrence of multiple holes in wireless sensor networks poses many challenges in designing routing protocols. The traditional scheme is forwarding packets along the hole perimeters. However, this scheme leads to two serious problems: data concentration around the hole boundaries and routing path enlargement Recently, several approaches have been proposed to address these two problems, wherein a common idea is to form forbidden areas around the holes from which packets are kept to stay away. However, due to the static nature of the forbidden areas and routing paths, the existing protocols cannot solve these two problems thoroughly. In this paper, we propose a novel protocol for bypassing multiple holes in wireless sensor networks which can balance the traffic over the network while ensuring the constant stretch property of the routing path. Our main idea is to use elastic forbidden areas and dynamic routing paths. The theoretical analysis proves that the routing path stretch of the proposed protocol can be controlled to be as small as 1 + ϵ (for any predefined ϵ > 0), and the simulation experiments show that our protocol strongly outperforms state-of-the-art protocols in terms of load balancing.},
+  keywords={Routing;Routing protocols;Wireless sensor networks;Upper bound;Niobium;Load modeling},
+  doi={10.1109/NCA.2017.8171330},
+  ISSN={},
+  month={Oct},
+  abbr={Network}
+}
+
+@INPROCEEDINGS{8108737,
+  author={Nguyen, Phi Le and Ji, Yusheng and Trung, Nguyen Thanh and Hung, Nguyen Thanh},
+  booktitle={2017 IEEE 14th International Conference on Mobile Ad Hoc and Sensor Systems (MASS)}, 
+  title={A Delay-Guaranteed Geographic Routing Protocol with Hole Avoidance in WSNs}, 
+  year={2017},
+  volume={},
+  number={},
+  pages={135-143},
+  abstract={Wireless sensor networks (WSNs) are used in many mission-critical applications, such as target tracking on a battlefield, emergency alarms, and disaster detection. In such applications, QoS provisioning in the timeliness domain is indispensable. Moreover, because of the diversity of sensory data, QoS provisioning should support not only one but multiple levels of end-to-end delay constraints. As a result of several characteristics such as the limitations on the energy supply, available storage and computational capacity of the sensor nodes, guaranteeing timely delivery in WSNs is a challenging problem. To overcome these limitations, several lightweight and stateless QoS-based geographic routing protocols have been proposed. The existing protocols work well in networks without routing holes (i.e., regions with no working sensors). However, with the occurrence of routing holes, they suffer from the so-called local minimum phenomenon and traffic congestion around the hole boundary. In this paper, we consider the presence of routing holes and propose a delay-guaranteed geographic routing protocol called DEHA that can support multiple end-to-end delay levels. The main idea is to achieve early awareness of the presence of a routing hole and then to utilize this awareness in determining a routing path that can avoid the hole. Simulation results show that our protocol outperforms the existing protocols in terms of several performance metrics, including packet delivery ratio, energy efficiency, and load balancing.},
+  keywords={Routing;Delays;Quality of service;Wireless sensor networks;Routing protocols;Relays;Wireless sensor networks;geographic routing;QoS;routing hole;end to end delay},
+  doi={10.1109/MASS.2017.16},
+  ISSN={2155-6814},
+  month={Oct},
+  abbr={Network}
+}
+
 @book{einstein1920relativity,
   title={Relativity: the Special and General Theory},
   author={Einstein, Albert},

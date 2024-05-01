@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-I received Best Student Paper Award at the IEEE 8th World Forum on the Internet of Things (WF-IoT) 2022. :sparkles: :smile:
+I received Best Student Paper Award at the IEEE 8th World Forum on the Internet of Things (WF-IoT) 2022! :sparkles: :smile:
