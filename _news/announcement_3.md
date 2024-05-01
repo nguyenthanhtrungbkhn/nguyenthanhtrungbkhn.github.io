@@ -6,4 +6,4 @@ related_posts: false
 ---
 
 I received Best Student Paper Award at the IEEE 8th World Forum on the Internet of Things (WF-IoT) 2022.
-# A simple inline announcement with Markdown emoji! :sparkles: :smile:
+<!--- A simple inline announcement with Markdown emoji! :sparkles: :smile: -->
