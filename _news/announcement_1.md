@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-I participate in research as a internship student at KLab, NII (Japan) under the supervisor of Prof. [Yusheng Ji](https://klab.nii.ac.jp/)
+I participate in research as a internship student at KLab, NII (Japan) under the supervisor of Prof. <a href="https://klab.nii.ac.jp">Yusheng Ji</a>
