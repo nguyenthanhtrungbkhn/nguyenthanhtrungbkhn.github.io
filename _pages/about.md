@@ -24,3 +24,4 @@ My research interests include network architecture, multipath transport protocol
 
 **Email:** [trung.nguyenthanh@phenikaa-uni.edu.vn](mailto:trung.nguyenthanh@phenikaa-uni.edu.vn)<br/>
 **Office:** Faculty of Computer Science, Building A9.
+**Position:** Director of Information Technology Program Toward Japan IT Market. 
