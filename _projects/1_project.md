@@ -1,7 +1,7 @@
 ---
 layout: page
-title: project 1
-description: with background image
+title: Multipath QUIC
+description: Network - Multipath Transport Protocol
 img: assets/img/12.jpg
 importance: 1
 category: work
