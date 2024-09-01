@@ -7,7 +7,7 @@ related_posts: false
 
 Our research (<a href="https://doi.org/10.1016/j.comcom.2024.107924">FQ-SAT</a>) was accepted for publication in Computer Communications (Q1, IF: 4.5)
 
----
+<!-- ---
 
 In the 5G and beyond era, multipath transport protocols, including MPQUIC, are necessary in various use cases. In MPQUIC, one of the most critical issues is efficiently scheduling the upcoming transmission packets on several paths considering path dynamicity. To this end, this paper introduces FQ-SAT - a novel Fuzzy Q-learning-based MPQUIC scheduler for data transmission optimization, including download time, in heterogeneous wireless networks.
 
@@ -21,4 +21,4 @@ In the 5G and beyond era, multipath transport protocols, including MPQUIC, are n
 
 ---
 
-> DOI: <a href="https://doi.org/10.1016/j.comcom.2024.107924">https://doi.org/10.1016/j.comcom.2024.107924</a>
+> DOI: <a href="https://doi.org/10.1016/j.comcom.2024.107924">https://doi.org/10.1016/j.comcom.2024.107924</a> -->
