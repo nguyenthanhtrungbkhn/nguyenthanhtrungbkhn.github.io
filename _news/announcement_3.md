@@ -1,11 +1,11 @@
 ---
 layout: post
 date: 2024-8-8 07:59:00-0400
-inline: false
+inline: true
 related_posts: false
 ---
 
-Our research (FQ-SAT) was accepted for publication in Computer Communications (Q1, IF: 4.5)
+Our research (<a href="https://doi.org/10.1016/j.comcom.2024.107924">FQ-SAT</a>) was accepted for publication in Computer Communications (Q1, IF: 4.5)
 
 ---
 
