@@ -13,6 +13,9 @@ export function PublicationCard({ publication }: { publication: Publication }) {
           <p className="mt-1 text-sm text-slate-600">
             {publication.venue}, {publication.year}
           </p>
+          {typeof publication.citations === "number" ? (
+            <p className="mt-2 text-sm font-semibold text-navy-700">Cited by {publication.citations}</p>
+          ) : null}
         </div>
         <span className="w-fit rounded-md bg-navy-50 px-3 py-1 text-xs font-bold text-navy-800">
           {publication.type}
