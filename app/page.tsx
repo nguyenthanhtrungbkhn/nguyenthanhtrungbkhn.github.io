@@ -15,9 +15,8 @@ export default function HomePage() {
       <section className="border-b border-slate-200 bg-navy-900">
         <div className="mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8">
           <p className="max-w-5xl text-lg leading-8 text-white">
-            I am open to research collaborations and student projects in AI for networking, MPQUIC/QUIC, wireless
-            networks, and smart healthcare systems. Students interested in networking, AI systems, and applied research
-            are welcome to contact me.
+            I am looking for motivated Master and Ph.D. students. Please contact me for more details.
+            Students interested in networking, AI systems, and applied research are welcome to contact me.
           </p>
         </div>
       </section>

@@ -1,6 +1,15 @@
 import { Button } from "@/components/Button";
 import { profile } from "@/data/profile";
 
+const contactLinks = [
+  { label: "Google Scholar", href: profile.links.scholar },
+  { label: "ORCID", href: profile.links.orcid },
+  { label: "ResearchGate", href: profile.links.researchGate },
+  { label: "LinkedIn", href: profile.links.linkedin },
+  { label: "GitHub", href: profile.links.github },
+  { label: "Phenikaa Profile", href: profile.links.phenikaa }
+].filter((link): link is { label: string; href: string } => Boolean(link.href));
+
 export function ContactCard() {
   return (
     <section className="rounded-lg border border-slate-200 bg-white p-6 shadow-sm">
@@ -17,12 +26,11 @@ export function ContactCard() {
         <Button href={profile.links.email} variant="primary">
           Email
         </Button>
-        <Button href={profile.links.scholar}>Google Scholar</Button>
-        <Button href={profile.links.orcid}>ORCID</Button>
-        <Button href={profile.links.researchGate}>ResearchGate</Button>
-        <Button href={profile.links.linkedin}>LinkedIn</Button>
-        <Button href={profile.links.github}>GitHub</Button>
-        <Button href={profile.links.phenikaa}>Phenikaa Profile</Button>
+        {contactLinks.map((link) => (
+          <Button key={link.label} href={link.href}>
+            {link.label}
+          </Button>
+        ))}
       </div>
     </section>
   );

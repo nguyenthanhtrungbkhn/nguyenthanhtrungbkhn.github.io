@@ -1,14 +1,41 @@
-export const profile = {
+type ProfileLinks = {
+  email: string;
+  scholar?: string;
+  orcid?: string;
+  researchGate?: string;
+  github?: string;
+  linkedin?: string;
+  phenikaa?: string;
+  cv?: string;
+};
+
+type Profile = {
+  name: string;
+  shortName: string;
+  role?: string;
+  school: string;
+  location: string;
+  email: string;
+  intro: string;
+  bio: string;
+  interests: string[];
+  extendedInterests: string[];
+  positions: string[];
+  education: string[];
+  links: ProfileLinks;
+};
+
+export const profile: Profile = {
   name: "Nguyen Thanh Trung, Ph.D.",
   shortName: "Nguyen Thanh Trung",
-  role: "Program Director, VJ Information Technology Program",
+  // role: "Program Director, Vietnam-Japan Information Technology Program",
   school: "Phenikaa School of Computing, Phenikaa University",
   location: "Hanoi, Vietnam",
-  email: "trung.nguyenthanh@phenikaa-uni.edu.vn",
+  email: "trung.nguyenthanh at phenikaa-uni dot edu dot vn",
   intro:
     "My research focuses on intelligent networked systems, multipath transport protocols, and AI-driven optimization for next-generation communication networks and smart digital infrastructures.",
   bio:
-    "Dr. Nguyen Thanh Trung is a lecturer and researcher at Phenikaa School of Computing, Phenikaa University, where he serves as Program Director of the VJ Information Technology Program. His research focuses on computer networks, multipath transport protocols, QUIC/MPQUIC, heterogeneous wireless networks, and AI-driven networking. His recent work explores reinforcement learning, fuzzy learning, and intelligent scheduling mechanisms to improve network performance over Wi-Fi, LTE, and 5G environments. He is also involved in applied research on smart healthcare systems, digital hospital operation centers, UAV systems, and digital infrastructure.",
+    "Dr. Nguyen Thanh Trung is a lecturer and researcher at Phenikaa School of Computing, Phenikaa University, where he serves as Program Director of the Vietnam-Japan Information Technology Program. His research focuses on computer networks, multipath transport protocols, QUIC/MPQUIC, heterogeneous wireless networks, and AI-driven networking. His recent work explores reinforcement learning, fuzzy learning, and intelligent scheduling mechanisms to improve network performance over Wi-Fi, LTE, and 5G environments. He is also involved in applied research on smart healthcare systems, digital hospital operation centers, UAV systems, and digital infrastructure.",
   interests: [
     "Computer Networks",
     "Multipath Transport Protocols",
@@ -30,22 +57,22 @@ export const profile = {
     "UAV Systems"
   ],
   positions: [
-    "Program Director, VJ Information Technology Program, Phenikaa School of Computing, Phenikaa University",
+    "Program Director, Vietnam-Japan Information Technology Program, Phenikaa School of Computing, Phenikaa University",
     "Lecturer / Researcher, Phenikaa School of Computing, Phenikaa University"
   ],
   education: [
-    "Ph.D. in Computer Science / Informatics",
-    "M.S. in Computer Science / Information Technology",
-    "B.E. in Information Technology / Computer Engineering"
+    "Ph.D. in Computer Science",
+    "M.Sc. in Data Communication and Computer Networks",
+    "B.E. in Information Technology"
   ],
   links: {
     email: "mailto:trung.nguyenthanh@phenikaa-uni.edu.vn",
-    scholar: "https://scholar.google.com/",
+    scholar: "https://scholar.google.com/citations?user=CkhHRmIAAAAJ&hl=en",
     orcid: "https://orcid.org/",
-    researchGate: "https://www.researchgate.net/",
-    github: "https://github.com/",
-    linkedin: "https://www.linkedin.com/",
+    // researchGate: "https://www.researchgate.net/",
+    // github: "https://github.com/",
+    // linkedin: "https://www.linkedin.com/",
     phenikaa: "https://phenikaa-uni.edu.vn/",
-    cv: "/cv-nguyen-thanh-trung.pdf"
+    // cv: "/cv-nguyen-thanh-trung.pdf"
   }
 };

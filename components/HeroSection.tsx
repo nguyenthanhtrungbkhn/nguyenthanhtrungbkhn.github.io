@@ -3,6 +3,14 @@ import { profile } from "@/data/profile";
 import { Button } from "@/components/Button";
 import { Tag } from "@/components/Tag";
 
+const profileLinks = [
+  { label: "Google Scholar", href: profile.links.scholar },
+  { label: "ORCID", href: profile.links.orcid },
+  { label: "ResearchGate", href: profile.links.researchGate },
+  { label: "GitHub", href: profile.links.github },
+  { label: "Download CV", href: profile.links.cv }
+].filter((link): link is { label: string; href: string } => Boolean(link.href));
+
 export function HeroSection() {
   return (
     <section className="academic-pattern border-b border-slate-200 bg-white">
@@ -15,7 +23,7 @@ export function HeroSection() {
             {profile.name}
           </h1>
           <div className="mt-5 space-y-1 text-lg font-semibold text-navy-800">
-            <p>{profile.role}</p>
+            {profile.role ? <p>{profile.role}</p> : null}
             <p>{profile.school}</p>
           </div>
           <div className="mt-6 flex flex-wrap gap-2">
@@ -28,11 +36,11 @@ export function HeroSection() {
             <Button href={profile.links.email} variant="primary">
               Email
             </Button>
-            <Button href={profile.links.scholar}>Google Scholar</Button>
-            <Button href={profile.links.orcid}>ORCID</Button>
-            <Button href={profile.links.researchGate}>ResearchGate</Button>
-            <Button href={profile.links.github}>GitHub</Button>
-            <Button href={profile.links.cv}>Download CV</Button>
+            {profileLinks.map((link) => (
+              <Button key={link.label} href={link.href}>
+                {link.label}
+              </Button>
+            ))}
             <Button href="/publications">Publications</Button>
           </div>
         </div>
@@ -46,7 +54,7 @@ export function HeroSection() {
             />
             <div className="mt-6 text-center">
               <p className="text-xl font-bold text-ink">{profile.shortName}</p>
-              <p className="mt-2 text-sm leading-6 text-slate-600">{profile.role}</p>
+              {profile.role ? <p className="mt-2 text-sm leading-6 text-slate-600">{profile.role}</p> : null}
               <Link href={profile.links.email} className="mt-4 inline-block text-sm font-semibold text-navy-700">
                 {profile.email}
               </Link>
