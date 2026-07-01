@@ -9,6 +9,15 @@ export function NewsCard({ item }: { item: NewsItem }) {
       </div>
       <h2 className="mt-4 text-lg font-bold leading-snug text-ink">{item.title}</h2>
       <p className="mt-3 leading-7 text-slate-700">{item.description}</p>
+      {item.links?.length ? (
+        <div className="mt-4 flex flex-wrap gap-x-4 gap-y-2 text-sm font-semibold">
+          {item.links.map((link) => (
+            <a key={link.href} href={link.href} className="text-navy-700 hover:text-navy-900">
+              {link.label}
+            </a>
+          ))}
+        </div>
+      ) : null}
     </article>
   );
 }

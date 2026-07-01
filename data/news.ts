@@ -3,56 +3,74 @@ export type NewsItem = {
   title: string;
   category: "Publications" | "Talks & Seminars" | "Student Achievements" | "Research Projects" | "Collaborations" | "Teaching Activities";
   description: string;
+  links?: Array<{
+    label: string;
+    href: string;
+  }>;
 };
 
 export const news: NewsItem[] = [
   {
-    date: "2026/07",
-    title: "Research collaboration discussion on AI applications in communication networks",
-    category: "Collaborations",
-    description:
-      "Exploring applied research directions at the intersection of AI systems and communication network optimization."
-  },
-  {
-    date: "2026/06",
-    title: "Working on MPQUIC scheduling mechanisms for heterogeneous wireless networks",
-    category: "Research Projects",
-    description:
-      "Continuing experiments on stream-aware path selection, congestion conditions, and web performance."
-  },
-  {
-    date: "2026/06",
-    title: "Developing smart hospital and AI-based digital operation center research reports",
-    category: "Research Projects",
-    description:
-      "Preparing technical material for smart healthcare workflows, operations dashboards, and infrastructure planning."
-  },
-  {
-    date: "2026/05",
-    title: "Supervising student projects in cloud computing, networking, and AI applications",
-    category: "Teaching Activities",
-    description:
-      "Mentoring student teams on practical system design, evaluation, and research communication."
-  },
-  {
-    date: "2026/04",
-    title: "Seminar on QUIC, HTTP/3, and AI-assisted network optimization",
-    category: "Talks & Seminars",
-    description:
-      "Shared an overview of modern transport protocols and learning-based scheduling opportunities."
-  },
-  {
-    date: "2026/03",
-    title: "Student prototype demonstrations for cloud and edge computing projects",
+    date: "2026/01",
+    title: "Completed Ph.D. thesis",
     category: "Student Achievements",
     description:
-      "Students presented early prototypes covering deployment automation, monitoring, and distributed services."
+      "I completed my thesis under the supervision of Associate Prof. Phi Le Nguyen (HUST) and Associate Prof. Kien Nguyen (Chiba University).",
+    links: [
+      {
+        label: "Phi Le Nguyen",
+        href: "https://users.soict.hust.edu.vn/lenp/"
+      },
+      {
+        label: "Kien Nguyen",
+        href: "https://www.s-lab.nd.chiba-u.jp/nguyen/"
+      }
+    ]
   },
   {
-    date: "2025/12",
-    title: "Manuscript preparation on reinforcement learning for MPQUIC scheduling",
+    date: "2025/09",
+    title: "Computer Networks paper accepted",
     category: "Publications",
     description:
-      "Preparing experimental results and analysis for an academic publication on AI-driven transport scheduling."
+      "Our research, Evaluating MPQUIC schedulers in dynamic wireless networks with 2D and 3D mobility, was accepted for publication in Computer Networks (Q1, IF: 4.6).",
+    links: [
+      {
+        label: "DOI",
+        href: "https://doi.org/10.1016/j.comnet.2025.111689"
+      }
+    ]
+  },
+  {
+    date: "2024/08",
+    title: "FQ-SAT paper accepted",
+    category: "Publications",
+    description:
+      "Our research, FQ-SAT, was accepted for publication in Computer Communications (Q1, IF: 4.5).",
+    links: [
+      {
+        label: "DOI",
+        href: "https://doi.org/10.1016/j.comcom.2024.107924"
+      }
+    ]
+  },
+  {
+    date: "2024/03",
+    title: "Research internship at KLab, NII",
+    category: "Research Projects",
+    description:
+      "I participated in research as an internship student at KLab, NII (Japan), under the supervision of Prof. Yusheng Ji.",
+    links: [
+      {
+        label: "KLab",
+        href: "https://klab.nii.ac.jp"
+      }
+    ]
+  },
+  {
+    date: "2022/12",
+    title: "Best Student Paper Award at IEEE WF-IoT 2022",
+    category: "Student Achievements",
+    description:
+      "I received the Best Student Paper Award at the IEEE 8th World Forum on the Internet of Things (WF-IoT) 2022."
   }
 ];
