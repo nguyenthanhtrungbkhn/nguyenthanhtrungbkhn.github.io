@@ -39,9 +39,11 @@ export function HeroSection() {
 
         <aside className="flex items-center justify-center lg:justify-end">
           <div className="w-full max-w-sm rounded-lg border border-slate-200 bg-white p-6 shadow-soft">
-            <div className="mx-auto flex aspect-square max-w-64 items-center justify-center rounded-lg bg-navy-800 text-6xl font-bold text-white">
-              NTT
-            </div>
+            <img
+              src="/images/drNguyenThanhTrung.jpg"
+              alt="Nguyen Thanh Trung"
+              className="mx-auto aspect-square w-full max-w-64 rounded-lg object-cover object-center"
+            />
             <div className="mt-6 text-center">
               <p className="text-xl font-bold text-ink">{profile.shortName}</p>
               <p className="mt-2 text-sm leading-6 text-slate-600">{profile.role}</p>

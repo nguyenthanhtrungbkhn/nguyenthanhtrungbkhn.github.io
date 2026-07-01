@@ -1,7 +1,14 @@
 export type NewsItem = {
   date: string;
   title: string;
-  category: "Publications" | "Talks & Seminars" | "Student Achievements" | "Research Projects" | "Collaborations" | "Teaching Activities";
+  category:
+    | "Publications"
+    | "Talks & Seminars"
+    | "Student Achievements"
+    | "Research Projects"
+    | "Collaborations"
+    | "Teaching Activities"
+    | "Academic Service";
   description: string;
   links?: Array<{
     label: string;
@@ -10,6 +17,30 @@ export type NewsItem = {
 };
 
 export const news: NewsItem[] = [
+  {
+    date: "2026/06/24",
+    title: "TPC invitation from APNOMS 2026",
+    category: "Academic Service",
+    description: "I accepted the Technical Program Committee invitation from APNOMS 2026.",
+    links: [
+      {
+        label: "APNOMS 2026",
+        href: "https://www.ieice.org/cs/icm/apnoms/2026/index.html"
+      }
+    ]
+  },
+  {
+    date: "2026/02/25",
+    title: "TPC invitation from CITA 2026",
+    category: "Academic Service",
+    description: "I accepted the Technical Program Committee invitation from CITA 2026.",
+    links: [
+      {
+        label: "CITA 2026",
+        href: "https://cita-conf.org/"
+      }
+    ]
+  },
   {
     date: "2026/01",
     title: "Completed Ph.D. thesis",
@@ -24,6 +55,18 @@ export const news: NewsItem[] = [
       {
         label: "Kien Nguyen",
         href: "https://www.s-lab.nd.chiba-u.jp/nguyen/"
+      }
+    ]
+  },
+  {
+    date: "2025/09/22",
+    title: "Tutorial on AI-based MPQUIC scheduler at APNOMS 2025",
+    category: "Talks & Seminars",
+    description: "We presented a tutorial on AI-based MPQUIC scheduler at APNOMS 2025.",
+    links: [
+      {
+        label: "APNOMS 2025",
+        href: "https://sites.google.com/view/apnoms2025/"
       }
     ]
   },
